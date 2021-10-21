@@ -91,7 +91,7 @@ const LandingPage: React.FC = () => {
           <IonSearchbar
             searchIcon={pin}
             className={style.search}
-            placeholder="Oslogatan 12, 164 32 Kista"
+            placeholder="Storgatan 11, 164 32 Solna"
           >
             <IonIcon slot="start" icon={locateOutline}></IonIcon>
           </IonSearchbar>

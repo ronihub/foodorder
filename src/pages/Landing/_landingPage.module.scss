@@ -5,7 +5,11 @@
 
 .search {
   padding-top: 0;
-
+  --placeholder-opacity: 1;
+  input {
+    font-size: 0.8rem !important;
+    letter-spacing: 1px !important;
+  }
   ion-icon {
     position: absolute;
     right: 20px;
