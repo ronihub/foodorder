@@ -1,0 +1,97 @@
+@import "../../style/shared.scss";
+
+.fullscreen {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+  width: 100%;
+  .rowInfoHolder {
+    padding: 14px 0px;
+  }
+  .holder {
+    color: white;
+    padding: 0px 0px;
+    z-index: 99;
+    span {
+      padding: 6px 10px;
+      border-radius: 6px 6px 6px 0;
+      background: $third-color;
+      font-weight: 600;
+    }
+    em {
+      font-size: 0.7rem;
+      margin-left: 7px;
+    }
+    .infoHolder {
+      h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 15px 0 0 0;
+      }
+      h4 {
+        margin: 0;
+        font-size: 0.8rem;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .btnHolder {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.firstCol {
+  padding-left: 0;
+}
+
+.fixedPos {
+  position: relative;
+}
+
+.optionTitleHolder {
+  width: 100%;
+  .optionTitleContainer {
+    padding: 10px 0 20px;
+    ion-item {
+      margin-top: 10px;
+    }
+    h6 {
+      margin: 0;
+      font-size: 0.7rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+}
+
+@include respond-to("tablet") {
+  .fullscreen {
+    .rowInfoHolder {
+      padding: 14px 0px;
+    }
+  }
+  .firstCol {
+    padding-left: 10;
+  }
+}
+
+@include respond-to("laptop") {
+  .fullscreen {
+    .btnHolder {
+      justify-content: flex-end;
+    }
+  }
+}

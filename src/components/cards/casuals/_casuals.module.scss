@@ -1,0 +1,80 @@
+@import "../../../style/shared.scss";
+
+.viewMoreRestaurantsCard {
+  margin: 0 5px;
+  ion-card-content {
+    height: 100%;
+  }
+  width: 100%;
+  background-image: url("../../../images/viewmore-r-bg.jpg");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  .holder {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    p {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+    h4 {
+      margin: 0px 0 15px;
+      font-size: 0.9rem;
+    }
+    ion-button {
+      height: 40px;
+      font-size: 0.8rem;
+      --padding-start: 25px;
+      --padding-end: 25px;
+      --border-radius: 3px;
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.329);
+  }
+}
+
+.restaurantOwnerCard {
+  background: $bg-color-dark;
+  color: white;
+  margin: 10px 25px;
+
+  ion-card-content {
+    padding: 45px;
+  }
+  h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+  p {
+    opacity: 0.8;
+    margin: 15px 0;
+  }
+}
+
+@include respond-to("laptop") {
+  .viewMoreRestaurantsCard {
+    .holder {
+      padding-left: 40px;
+      h3 {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}

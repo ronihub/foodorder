@@ -1,0 +1,317 @@
+@import "../../../style/shared.scss";
+
+.restaurantCard {
+  cursor: pointer;
+
+  ion-card-content {
+    padding: 0;
+  }
+  .extraInfoHolder {
+    display: flex;
+    padding-top: 7px;
+    justify-content: space-between;
+    .openinghours {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $success-color;
+      padding: 2px 8px;
+      border: 1px solid $success-color;
+      height: fit-content;
+      border-radius: 2px;
+      position: relative;
+      top: 5px;
+    }
+    .reviewsHolder {
+      display: flex;
+      text-align: right;
+      h6 {
+        color: $title-color;
+        font-size: 0.8rem;
+        font-weight: 500;
+        opacity: 0.8;
+      }
+      p {
+        font-weight: 400;
+        font-size: 0.7rem;
+        font-style: italic;
+      }
+      span {
+        margin-left: 10px;
+        padding: 0px 8px;
+        display: flex;
+        align-items: center;
+        background: $bg-color;
+      }
+    }
+  }
+  .holder {
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: -moz-linear-gradient(
+        top,
+        transparent 5%,
+        rgba(0, 0, 0, 0.552) 100%
+      );
+      background: -webkit-linear-gradient(
+        top,
+        transparent 5%,
+        rgba(0, 0, 0, 0.552) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        transparent 5%,
+        rgba(0, 0, 0, 0.552) 100%
+      );
+    }
+    .bgimage {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      ion-img {
+      }
+    }
+    .labelHolder {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .categoryLabel {
+        padding: 2px 8px;
+        border-radius: 5px;
+        background: black;
+        color: white;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+      }
+      .discountLabel {
+        padding: 2px 8px;
+        background: $fourth-color;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-radius: 5px;
+      }
+    }
+    .infoHolder {
+      padding: 0px 0px 10px 10px;
+      z-index: 99;
+      h5 {
+        color: #ffffff;
+        font-weight: 500;
+      }
+      p {
+        color: #ffffffb0;
+        font-size: 0.9rem;
+        margin-top: 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.firstCol {
+  padding-left: 0;
+}
+
+.restaurantCardTwo {
+  cursor: pointer;
+
+  .holder {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    .imgholder {
+      position: relative;
+    }
+    ion-img {
+      object-fit: cover;
+      height: 130px;
+    }
+  }
+  .infoHolder {
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h6 {
+      font-size: 0.75rem;
+      font-style: italic;
+      margin: 0;
+      font-weight: 400;
+      color: black;
+    }
+    h5 {
+      color: $title-color;
+      margin: 5px 0 0 0;
+      top: 2px;
+    }
+    p {
+      margin: 0;
+      font-size: 0.7;
+      bottom: 1px;
+    }
+    .discountHolder {
+      padding-top: 10px;
+
+      span {
+        padding: 2px 8px;
+        background: $fourth-color;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 0.8rem;
+        padding-left: 5px;
+      }
+    }
+  }
+  .review {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: $bg-color;
+    padding: 7px;
+    border-radius: 10px 10px 10px 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.featuredProductCard {
+  cursor: pointer;
+
+  border: 1px solid #ededed;
+  .imgholder {
+    .recommended {
+      position: absolute;
+      z-index: 99;
+      background: $success-color;
+      color: white;
+      padding: 5px 8px;
+      font-size: 0.7rem;
+    }
+    width: 100%;
+    position: relative;
+    ion-img {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .infoHolder {
+    padding: 10px;
+    display: flex;
+    position: relative;
+    em {
+      font-size: 0.75rem;
+      font-style: italic;
+      margin: 0;
+      font-weight: 400;
+      color: black;
+      opacity: 0.8;
+    }
+    div {
+      color: #222;
+      margin: 0 0 0 0;
+      position: relative;
+      h5 {
+        margin: 0;
+      }
+    }
+    span {
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-style: italic;
+      color: $title-color;
+      background: $bg-color;
+      padding: 7px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      border-radius: 0px 0 8px 0;
+    }
+  }
+}
+
+.categoryItem {
+  --padding-start: 0px;
+  --background: #ededee;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+}
+.productItem {
+  cursor: pointer;
+  --padding-start: 0;
+  display: flex;
+  ion-avatar {
+    height: 70px;
+    width: 70px;
+    --border-radius: 100%;
+  }
+  .holder {
+    display: flex;
+    flex: 1;
+    margin: 5px 0;
+    .productInfo {
+      padding: 10px 0;
+      h2 {
+        margin: 0;
+        font-size: 1rem;
+        color: $title-color;
+        font-weight: 400;
+      }
+      p {
+        margin: 5px 0 5px;
+        font-size: 0.7rem;
+        opacity: 0.3;
+        color: $title-color;
+      }
+      em {
+        font-size: 0.9rem;
+        opacity: 0.4;
+        span {
+          font-weight: 300;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("laptop") {
+  .restaurantCardTwo {
+    .infoHolder {
+      padding: 0;
+      padding-left: 20px;
+    }
+  }
+  .firstCol {
+    padding-left: 10px;
+  }
+  .categoryItem {
+    --padding-start: 15px;
+  }
+}

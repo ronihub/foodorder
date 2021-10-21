@@ -1,0 +1,85 @@
+@import "../../style/shared.scss";
+
+/* PRODUCT */
+.productFullScreenImg {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.infoHolder {
+  color: $title-color;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  p {
+    margin: 0;
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 300;
+  }
+  .cost {
+    position: absolute;
+    color: white;
+    right: 20px;
+    bottom: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+    span {
+      font-size: 60%;
+    }
+  }
+}
+.optionTitleHolder {
+  width: 100%;
+  .optionTitleContainer {
+    padding: 10px 0 20px;
+    ion-item {
+      margin-top: 10px;
+    }
+    h6 {
+      margin: 0;
+      font-size: 0.7rem;
+      font-style: italic;
+      font-weight: 400;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+}
+.addToCheckoutContainer {
+  width: 100%;
+  ion-button {
+    height: 80px;
+  }
+  span {
+    position: absolute;
+    right: 15px;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}
+.iconHolder {
+  position: absolute;
+  left: 10px;
+  font-size: 2.3rem;
+}
+
+@include respond-to("laptop") {
+  .productFullScreenImg {
+    height: 500px;
+  }
+}

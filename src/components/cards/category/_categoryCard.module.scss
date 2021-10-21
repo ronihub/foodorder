@@ -1,0 +1,49 @@
+@import "../../../style/shared.scss";
+
+.categoryCard {
+  margin: 0;
+  border-radius: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+.categoryCard ion-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 7px;
+    border-radius: 17px;
+    background: $bg-color;
+  }
+  div {
+    color: $secondary-color;
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $title-color;
+    text-align: center;
+  }
+  p {
+    font-size: 0.7rem;
+    opacity: 0.6;
+  }
+}
+
+@include respond-to("laptop") {
+  .categoryCard ion-card-content {
+    padding: 50px 20px;
+    div {
+      font-size: 4rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@import "../../style/shared.scss";
+.headerContainer {
+  padding-top: 0px;
+}
+
+.search {
+  padding-top: 0;
+
+  ion-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+}
+
+.fullscreen {
+  height: 580px;
+  position: relative;
+  background: url("../../images/wallpaper-food.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  .overlay {
+    background: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .holder {
+    z-index: 99;
+    padding: 0 15px;
+
+    h1 {
+      margin-top: 0;
+      z-index: 99;
+      font-size: 2rem;
+      margin-bottom: 0px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.05rem;
+      margin-top: 0px;
+    }
+    ion-list {
+      padding: 0;
+      background: transparent;
+    }
+
+    ion-button {
+      margin: 0;
+    }
+  }
+}
+
+.categories {
+  ion-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    display: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+  }
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+.bgimage {
+  min-height: 400px;
+  background-image: url("../../images/restaurant-owner-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@include respond-to("laptop-big") {
+  .fullscreen {
+    .holder {
+      padding: 0;
+      min-width: 1000px;
+      ion-list {
+        background: white;
+      }
+      h1 {
+        font-size: 3.5rem;
+      }
+      p {
+        letter-spacing: 1.5px;
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+@include respond-to("tablet") {
+  .fullscreen {
+    .holder {
+    }
+  }
+}
+
+@include respond-to("laptop") {
+  .fullscreen {
+    height: 650px;
+  }
+  .bgimage {
+    min-height: 700px;
+  }
+}

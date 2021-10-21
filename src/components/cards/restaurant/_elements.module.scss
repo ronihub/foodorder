@@ -1,0 +1,39 @@
+@import "../../../style/shared.scss";
+
+.option {
+  .optionsHolder {
+    ion-list {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+  .optionTitleHolder {
+    width: 100%;
+    .optionTitleContainer {
+      padding: 10px 0;
+      h6 {
+        margin: 0;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: 400;
+      }
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@include respond-to("laptop") {
+  .option {
+    .optionsHolder {
+      .optionsTitleHolder {
+        .optionTitleContainer {
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

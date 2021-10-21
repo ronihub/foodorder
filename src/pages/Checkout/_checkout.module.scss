@@ -1,0 +1,165 @@
+@import "../../style/shared.scss";
+
+.fullWidth {
+  height: 100%;
+  width: 100%;
+
+  .bgImage {
+    background-image: url("../../images/food-bg.jpg");
+    padding: 40px 0px 60px;
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f4f4f4f3;
+  }
+}
+
+.itemsInCartHolder {
+  width: 100%;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  span {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+}
+
+.itemInCartOption {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.totalsHolder {
+  width: 100%;
+  background: $bg-color;
+  padding-top: 10px;
+  ion-item {
+    --background: transparent;
+  }
+  ion-item.smaller {
+    height: 30px;
+  }
+  h6 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  span {
+    position: absolute;
+    right: 15px;
+    bottom: 12px;
+    font-size: 0.7rem;
+    font-style: italic;
+    em {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.couponInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ion-item {
+    ion-input {
+      border: 1px solid $bg-color;
+      padding-left: 10px !important;
+      height: 100%;
+      background: $bg-color;
+    }
+    ion-button {
+      --border-radius: 0 5px 5px 0;
+      --padding-start: 15px;
+      --padding-end: 15px;
+    }
+    span {
+      background: $bg-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      font-size: 1.4rem;
+    }
+    ion-textarea {
+      border: 1px solid $bg-color;
+      padding: 0 15px;
+      background: white;
+    }
+  }
+}
+
+.condenseHeader {
+  display: flex;
+  padding-bottom: 10px;
+  span {
+    font-size: 0.7rem;
+  }
+  .infoHolder {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.fabButtonHolder {
+  width: 100%;
+  padding-left: 15px;
+  ion-fab-list {
+    width: 100%;
+    padding-right: 15px;
+    ion-fab-button {
+      --background: white;
+
+      ion-img {
+        width: 70px;
+      }
+    }
+  }
+  ion-fab-button {
+    width: 100%;
+    --border-radius: 5px;
+    --background: #000000;
+    --background: linear-gradient(15deg, #000000 0%, #272727 74%, #000000 100%);
+
+    ion-label {
+      display: flex;
+      align-items: center;
+      em {
+        position: absolute;
+        right: 15px;
+        font-size: 0.7rem;
+        span {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("laptop") {
+  .fabButtonHolder {
+    display: none;
+  }
+}

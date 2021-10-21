@@ -1,0 +1,100 @@
+@import "../../../style/shared.scss";
+
+.checkoutCardStyleOne {
+  padding-bottom: 25px;
+  width: 100%;
+  ion-card-header {
+    padding: 15px 20px 12px 25px;
+    background: white;
+    .checkoutHeaderTitle {
+      font-weight: 500;
+      font-size: 1.0125rem;
+    }
+  }
+  ion-card-content {
+    padding: 10px 10px;
+  }
+
+  .checkoutLeaveMessage {
+    background: $bg-color;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.orderSummaryCard {
+  border: 2px dotted #d2d8dd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  background: #fff;
+  .changeBtnHolder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    span {
+      margin: 20px 0 0px;
+      color: $primary-color;
+      font-size: 0.8rem;
+    }
+  }
+  ion-card-header {
+    text-align: center;
+    padding: 23px 20px 18px 20px;
+    background: #f8f8f8;
+    border-bottom: 2px dotted #d2d8dd;
+  }
+  .orderSummaryList {
+    padding-top: 20px;
+    ion-label {
+      h2 {
+        font-weight: 500;
+        color: black;
+        margin-bottom: 0px;
+      }
+      p {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        color: $title-color;
+        span {
+          right: 20px;
+          font-size: 0.75rem;
+          font-weight: 500;
+          color: black;
+        }
+      }
+    }
+    ion-button {
+      margin-top: 20px;
+    }
+  }
+}
+
+.bottomPart {
+  background: $bg-color;
+  padding: 20px 5px 20px 0px;
+  ion-item {
+    --background: transparent;
+    ion-input {
+      background: white;
+    }
+    ion-textarea {
+      background: white;
+      border-radius: 0 0 2px 2px;
+      padding-left: 10px;
+      font-size: 0.8rem;
+    }
+    ion-button.couponBtn {
+      --border-radius: 0 5px 5px 0;
+      --font-size: 0.8rem;
+      --padding-start: 15px;
+      --padding-end: 15px;
+      --background: white;
+      color: $primary-color;
+    }
+  }
+}

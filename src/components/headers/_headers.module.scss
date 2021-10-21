@@ -1,0 +1,73 @@
+@import "../../style/shared.scss";
+
+.paymentIntegrationsHolder {
+  background: white;
+  padding: 20px 10px;
+  border-top-left-radius: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  .paymentLogoHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .cc {
+      max-width: 50px;
+      margin: 0 5px;
+    }
+    .paypal {
+      max-width: 60px;
+    }
+    .amex {
+      max-width: 70px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.transparent {
+  --background: transparent;
+}
+
+.headerOne {
+  ion-toolbar {
+    --padding-start: 10px;
+  }
+}
+
+.header {
+  background: white;
+  ion-toolbar {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.cartIconBtn {
+  margin-left: 0;
+  position: relative;
+  right: 10px;
+  ion-icon {
+    font-size: 1.65rem;
+  }
+  span.itemsInCartIndicator {
+    position: absolute;
+    z-index: 99;
+    color: black;
+    background: white;
+    padding: 1px 2px;
+    top: 2px;
+    right: 0;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cartPopover {
+}
